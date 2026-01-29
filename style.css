@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;700&display=swap');
+
 /* Basic Resets & Global Styles */
 * {
     margin: 0;
@@ -6,10 +8,10 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f7f6;
+    color: #2c3e50;
+    background-color: #f0f4f8; /* Lighter blue-ish grey */
     text-align: center;
 }
 
@@ -22,7 +24,7 @@ body {
 }
 
 a {
-    color: #28a745;
+    color: #FF006E; /* Vibrant Pink */
     text-decoration: none;
 }
 
@@ -36,56 +38,64 @@ ul {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-    color: #2c3e50;
+    font-family: 'Jua', sans-serif;
+    color: #3A86FF; /* Primary Blue */
     margin-bottom: 10px;
 }
 
-h1 { font-size: 2.5em; }
-h2 { font-size: 2em; }
+h1 { font-size: 3em; }
+h2 { font-size: 2.5em; }
 h3 { font-size: 1.75em; }
 
 p {
     margin-bottom: 15px;
+    font-size: 1.1em;
 }
 
 /* Buttons */
 .btn {
     display: inline-block;
-    background: #28a745;
+    background: #FF006E; /* Vibrant Pink */
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px; /* More rounded */
     cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
+    font-family: 'Jua', sans-serif;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 0, 110, 0.4);
 }
 
 .btn:hover {
-    background: #218838;
+    background: #c00054;
     text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 0, 110, 0.5);
 }
 
 /* Header */
 header {
-    background: #ffffff;
+    background: transparent;
     color: #333;
-    padding: 1rem 0;
-    border-bottom: 1px solid #e0e0e0;
+    padding: 1.5rem 0;
+    border-bottom: none;
     margin-bottom: 30px;
 }
 
 header .container h1 {
     margin: 0;
-    font-size: 1.8em;
+    font-size: 2.5em;
+    color: #3A86FF; /* Primary Blue */
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
 }
 
 /* Main Content */
 .recommend-section {
-    background: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
     margin-bottom: 30px;
 }
 
@@ -93,41 +103,51 @@ header .container h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     margin-top: 20px;
 }
 
 #userInput {
     width: 60%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
     font-size: 1em;
+    font-family: 'Noto Sans KR', sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+#userInput:focus {
+    outline: none;
+    border-color: #3A86FF;
 }
 
 .result-section {
-    margin-top: 30px;
+    margin-top: 40px;
+    min-height: 200px;
 }
 
 .result-card {
-    background: #fff;
-    padding: 20px 40px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background: linear-gradient(135deg, #3A86FF, #FF006E);
+    color: #fff;
+    padding: 30px 50px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     margin-top: 20px;
     display: inline-block;
+    transition: transform 0.3s ease;
 }
 
 .result-card h2 {
-    font-size: 2.2em;
-    color: #28a745;
+    font-size: 3em;
+    color: #fff;
     margin: 0;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
 }
-
 
 /* Footer */
 footer {
-    color: #555;
+    color: #777;
     text-align: center;
     padding: 20px 0;
     margin-top: 40px;
@@ -148,4 +168,7 @@ footer {
     #userInput {
         width: 100%;
     }
+
+    h1 { font-size: 2.5em; }
+    h2 { font-size: 2em; }
 }
