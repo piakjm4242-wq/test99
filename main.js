@@ -1,36 +1,27 @@
+// main.js for EcoHarmony Hub
+
+// You can add JavaScript for interactive elements here if needed.
+// For example, a mobile navigation toggle, form validations, etc.
+
 document.addEventListener('DOMContentLoaded', () => {
-    const pressMeButton = document.getElementById('pressMeButton');
-    const greetingDisplay = document.getElementById('greetingDisplay');
+    // Example: Smooth scrolling for anchor links (optional)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
 
-    const greetings = [
-        "Hello, friend! (English)",
-        "안녕, 친구! (Korean)",
-        "Hola, amigo! (Spanish)",
-        "Bonjour, mon ami! (French)",
-        "Hallo, Freund! (German)",
-        "Ciao, amico! (Italian)",
-        "Olá, amigo! (Portuguese)",
-        "Привет, друг! (Russian)",
-        "你好, 朋友! (Chinese)",
-        "こんにちは、友達！(Japanese)",
-        "مرحبا يا صديقي! (Arabic)",
-        "नमस्ते दोस्त! (Hindi)",
-        "Hej, ven! (Danish)",
-        "Hei, ystävä! (Finnish)",
-        "Hei, venn! (Norwegian)",
-        "Hallå, vän! (Swedish)",
-        "Ahoj, kamaráde! (Czech)",
-        "Witaj, przyjacielu! (Polish)",
-        "Xin chào, bạn! (Vietnamese)",
-        "Merhaba, arkadaşım! (Turkish)"
-    ];
-
-    if (pressMeButton && greetingDisplay) {
-        pressMeButton.addEventListener('click', () => {
-            const randomIndex = Math.floor(Math.random() * greetings.length);
-            greetingDisplay.textContent = greetings[randomIndex];
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
         });
-    } else {
-        console.error('Button or greeting display element not found.');
+    });
+
+    // Example: Simple form submission handler for contact page (optional, client-side only)
+    const contactForm = document.querySelector('.contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Form submitted! (This is a demo, no actual submission is made.)');
+            this.reset();
+        });
     }
 });
