@@ -3,78 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoHarmony Hub - Nurturing a Greener Tomorrow, Today.</title>
+    <title>이상형 남자 추천</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Google AdSense - Head Tag -->
-    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_ADSENSE_CLIENT_ID" crossorigin="anonymous"></script> -->
 </head>
 <body>
     <header>
         <div class="container">
-            <h1><a href="index.html">EcoHarmony Hub</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="articles.html">Articles</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            <h1>이상형 남자 추천</h1>
         </div>
     </header>
 
     <main class="container">
-        <section class="hero">
-            <h2>Nurturing a Greener Tomorrow, Today.</h2>
-            <p>Your guide to sustainable living, eco-friendly practices, and building a harmonious relationship with our planet.</p>
-            <a href="articles.html" class="btn">Explore Articles</a>
+        <section class="recommend-section">
+            <p>당신의 성격이나 특징 3가지를 입력해주세요. 당신에게 꼭 맞는 이상형을 추천해드립니다!</p>
+            <div class="input-area">
+                <input type="text" id="userInput" placeholder="예: 다정한, 유머있는, 똑똑한">
+                <button id="recommendBtn" class="btn">추천받기</button>
+            </div>
         </section>
 
-        <!-- Google AdSense - Top Banner Ad -->
-        <!-- <div class="adsense-banner">
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-YOUR_ADSENSE_CLIENT_ID"
-                 data-ad-slot="YOUR_ADSENSE_TOP_BANNER_SLOT"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div> -->
-
-        <section class="featured-articles">
-            <h3>Featured Articles</h3>
-            <div class="article-grid">
-                <article class="card">
-                    <h4><a href="article-1.html">Top 5 Easy Ways to Reduce Plastic Waste</a></h4>
-                    <p>Discover simple yet effective methods to minimize your plastic footprint and contribute to a cleaner environment.</p>
-                </article>
-                <article class="card">
-                    <h4><a href="articles.html">Beginner's Guide to Composting at Home</a></h4>
-                    <p>Turn your kitchen scraps into nutrient-rich soil with this step-by-step guide to home composting.</p>
-                </article>
-                <article class="card">
-                    <h4><a href="articles.html">Understanding Renewable Energy Sources</a></h4>
-                    <p>An in-depth look at solar, wind, and hydropower, and how they power a sustainable future.</p>
-                </article>
-            </div>
+        <section id="result" class="result-section">
+            <!-- 추천 결과가 여기에 표시됩니다. -->
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 EcoHarmony Hub. All rights reserved.</p>
-            <nav class="footer-nav">
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </nav>
+            <p>&copy; 2026 My Dream Guy. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="main.js"></script>
+    <div id="disqus_thread"></div>
+    <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://bobo0321.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </body>
 </html>
